@@ -1,8 +1,11 @@
+version: '3.8'
+
 include:
   - proxy.yaml
 
 services:
   web:
+    image: "cr.yandex/crp9frgai944sabctkvc/python-service:1.0"
     build:
       context: .
       dockerfile: Dockerfile.python 
@@ -15,7 +18,6 @@ services:
 
   mysql:
     image: mysql:8
-    command: "--default-authentication-plugin=mysql_native_password" 
     networks:
       backend:
         ipv4_address: 172.20.0.10
