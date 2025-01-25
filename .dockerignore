@@ -1,7 +1,8 @@
 haproxy/
 nginx/
 LICENSE
-not_tested_main.py
+main.py
 *.yaml
 *.md
 *.pdf
+run.sh
