@@ -3,7 +3,7 @@ include:
 
 services:
   web:
-    image: "cr.yandex/crp9frgai944sabctkvc/python-service:1.0"
+    image: "cr.yandex/crp9frgai944sabctkvc/netology-python:1.0"
     build:
       context: .
       dockerfile: Dockerfile.python
